@@ -49,7 +49,7 @@ Then in an nfs\_server.rb role that is applied to NFS servers:
     override_attributes(
       "nfs" => {
         "packages" => [ "portmap", "nfs-common", "nfs-kernel-server" ],
-        "ports" => {
+        "port" => {
           "statd" => 32765,
           "statd_out" => 32766,
           "mountd" => 32767,
